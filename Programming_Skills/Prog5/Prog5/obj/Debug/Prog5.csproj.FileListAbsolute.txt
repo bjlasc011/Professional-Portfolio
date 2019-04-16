@@ -1,0 +1,7 @@
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\bin\Debug\Prog5.exe.config
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\bin\Debug\Prog5.exe
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\bin\Debug\Prog5.pdb
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\obj\Debug\Prog5.csprojAssemblyReference.cache
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\obj\Debug\Prog5.csproj.CoreCompileInputs.cache
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\obj\Debug\Prog5.exe
+C:\Users\BJLAS\.._OneDrive - University of Louisville\College\CIS\2018 - Fall\CIS_200-01\VisualStudioC#\PROGRAMS\Prog5\Prog5\obj\Debug\Prog5.pdb
