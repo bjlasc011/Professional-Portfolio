@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Products and Pricing</h1>
+  <button mat-raised-button (click)="pushOrders()">
+    <mat-icon>shopping_cart</mat-icon>Create Order
+  </button>
+  <mat-list *ngFor="let categoryWP of categoriesWithPrices; let i=index;">
+    <h3 (click)="expand(i)" class="primary" subheader>{{categoryWP.name}}
+      <mat-icon matListIcon *ngIf="!shows[i]">expand_more</mat-icon>
+      <mat-icon matListIcon *ngIf="shows[i]">expand_less</mat-icon>
+      <span [hidden]="!shows[i]">
+        <button mat-icon-button (click)="pushOrders()">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+      </span>
+    </h3>
+
+    <div role="listitem" *ngFor="let flavor of categoryWP.flavors; let j=index" [hidden]="!shows[i]">
+      <mat-list-item (click)="toggleChecked(i,j)" class="grid-hover">
+        <h4 matLine>{{flavor.description}}</h4>
+        <span matLine>{{flavor.price}}</span>
+        <mat-checkbox color="accent" (click)="toggleChecked(i,j)" [(ngModel)]="flavor.checked">
+        </mat-checkbox>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </div>
+
+  </mat-list>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,16 @@
+::ng-deep .app-background{
+  background: rgba(200,200,200,0.8);
+}
+h1 {
+  padding: 20px;
+}
+a{
+  color: white;
+  text-decoration: none;
+  padding-right: 20px;
+}
+app-footer{
+  position: relative;
+  left:0;
+  bottom:0;
+}

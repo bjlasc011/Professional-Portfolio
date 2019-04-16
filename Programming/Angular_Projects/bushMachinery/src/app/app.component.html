@@ -1,0 +1,33 @@
+<div @appear class="main-container" fxFlex>
+  <div class="content" fxFlex="70vw" fxLayout="column">
+    <mat-toolbar class="toolbar">
+      <mat-toolbar-row class="shadow">
+        <span class="title">
+          B<span class="title-lwr">USH</span>
+          M<span class="title-lwr">ACHINERY</span>
+        </span>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="scndry">
+        <button mat-raised-button routerLink="/home" class="button">
+          Welcome
+        </button>
+        <button mat-raised-button class="button" (mouseenter)="mouseEnter()">Inventory</button>
+        <button mat-raised-button routerLink="/about" class="button">
+          Contact & About
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="menu-container" *ngIf="showInventory">
+      <div class="hover-inventory" (mouseenter)="mouseEnter()"></div>
+      <div class="menu" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+        <div fxLayoutAlign="start" fxLayout="column">
+          <div *ngFor="let c of categories" class="item" (click)="navTo(c.category)">
+            {{c.category}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

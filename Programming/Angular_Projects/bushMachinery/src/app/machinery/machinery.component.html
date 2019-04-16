@@ -1,0 +1,117 @@
+<div class="main-container">
+  <div *ngFor="let item of category.items; let j = index">
+    <div class="name">
+      {{item.name}} -
+      <span class="price">
+        {{item.price}}
+      </span>
+    </div>
+
+    <div class="desc">
+      {{item.description}}
+    </div>
+    <div class="spacer"></div>
+    <div class="gallery">
+
+      <div class="curr-pic">
+        <img @show src="{{item.imgUrls[currImgs[j]]}}" class="image">
+      </div>
+
+      <div class="icon-wrapper">
+        <button mat-mini-fab class="arrow-container" (click)="prev(j)">
+          <mat-icon class="center">chevron_left</mat-icon>
+        </button>
+        <div *ngFor="let icon of icons; let i = index" (click)="setImg(j,i)">
+          <img [src]="getUrl(j,i)" [ngClass]="(i === 3) ? 'curr-icon' : (i === 2 || i === 4) ? 'next-icon' : 'icon'">
+        </div>
+        <button mat-mini-fab class="arrow-container" (click)="next(j)">
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+      </div>
+
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </div>
+
+
+
+  <form class="example-form">
+    <h3>Submit an Equipment Inquiry </h3>
+
+    <mat-form-field class="example-full-width buffer" appearance="outline">
+      <input matInput placeholder="Company">
+    </mat-form-field>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="First name">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="Last Name">
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      <mat-form-field class="example-full-width buffer" appearance="outline">
+        <input matInput placeholder="Address 1">
+      </mat-form-field>
+      <mat-form-field class="example-full-width buffer" appearance="outline">
+        <input matInput placeholder="Address 2">
+      </mat-form-field>
+    </p>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="City">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="State">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="">
+            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <td class="spacer"></td>
+    <button mat-raised-button type="button">Submit</button>
+  </form>
+
+</div>
+
+
+<div class="footer">
+  <table class="footer-details">
+    <tr>
+      <td>
+        <div class="fb">
+          <img src="../../assets/fbookLogo.png" alt="Facebook" width="80px">
+        </div>
+      </td>
+      <td class="spacer"></td>
+      <td>
+        <!-- <mat-icon>call</mat-icon> -->
+        <a href="tel:+4233662416">(423) 366-2416</a>
+      </td>
+      <td class="spacer"></td>
+      <td>
+        <!-- <mat-icon>email</mat-icon> -->
+        <a href="mailto:bush.machinery@gmail.com">bush.machinery@gmail.com</a>
+      </td>
+    </tr>
+  </table>
+</div>

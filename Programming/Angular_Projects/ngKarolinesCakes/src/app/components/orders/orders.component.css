@@ -1,0 +1,227 @@
+h1, h2, h3, h4 {
+  display: block;
+  clear: both;
+  color: #000000d7;
+}
+label {
+  padding: 10px;
+}
+::ng-deep .last-card {
+  padding-bottom: 25px;
+}
+.mat-card[_ngcontent-c6] {
+  width: inherit !important;
+}
+.main-container {
+  padding: 25px;
+  position: absolute;
+  top: 80px;
+  min-height: 100vh;
+  max-width: calc(60% - 50px);
+  min-width: calc(60% - 50px);
+  left: 20%;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  background: rgba(160, 151, 150, 0.025);
+}
+.order-form > label {
+  padding: 20px 10px 25px 5px;
+}
+
+.order-radio {
+  float: left;
+  padding: 10px 20px 10px 0px;
+}
+.card-icon {
+  padding-top:20px;
+  padding-right: 20px;
+}
+::ng-deep .large-input {
+  flex: 0 0 50%;
+  padding: 4px 20px 5px 20px ;
+}
+::ng-deep .comments {
+  min-height: 80px;
+}
+::ng-deep .delivery-container {
+  width: 100%;
+}
+.city-state-zip {
+  clear: both;
+}
+.form-header {
+  padding: 20px 10px 10px 20px;
+}
+::ng-deep .calendar {
+  float: left;
+}
+::ng-deep .file-drop {
+  float: left;
+}
+.clear-both {
+  clear: both;
+}
+::ng-deep mat-icon {
+  cursor: pointer;
+  color: #3f51b5;
+}
+::ng-deep .upload-drop-zone {
+  border: dashed 3px rgba(200,200,200,0.8);
+  vertical-align: middle;
+  text-align: center;
+  color: rgba(140,140,140,0.8);
+  font-size: .8rem;
+  height: 60px;
+  min-width: 85%;
+  border-radius: 10px;
+  clear: both;
+  padding: 10px 20px 5px 20px ;
+}
+::ng-deep .comments {
+  width: 50%;
+  max-width: 400px;
+  min-width: 400px;
+  padding: 4px 20px 5px 20px;
+  float: left;
+}
+::ng-deep .label-comments {
+  float: left;
+}
+::ng-deep .label-container {
+  height: 80px;
+}
+::ng-deep .mat-form-field-wrapper {
+  padding: 0px
+}
+::ng-deep .nav-col1 {
+  float: left;
+  width: 250px;
+}
+::ng-deep .nav-col2 {
+  float: left;
+  width: 200px;
+}
+::ng-deep .nav-col3 {
+  float: left;
+  width: 200px;
+}
+.nav-bar {
+  width: 100%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.newsletter {
+  padding-left: 15px;
+}
+.address-buffer{
+  height: 30px;
+  padding: 10px;
+}
+.buffer{
+  padding: 20px;
+}
+.paypal{
+  height: 25px;
+  border: 2px rgba(255, 255, 255, 0.459) solid;
+  border-radius: 10px;
+}
+.large-input {
+  width: calc(50% - 20px);
+  padding: 5px 10px 5px 10px;
+}
+.small-input {
+  width: calc(33.33% - 20px);
+  padding: 5px 10px 5px 10px;
+}
+.xsmall-input{
+  width: 60px;
+  padding: 5px 10px;
+}
+.xlarge-input{
+  width: calc(100% - 20px);
+  padding: 5px 10px 5px 10px;
+}
+.greyed{
+  color: #0000005a;
+}
+.norm{
+  /*needed*/
+}
+.treat-bttn{
+  width: 10px;
+  margin: 20px;
+}
+.align-right{
+  text-align: right;  
+}
+/***************************************** FOOTER ************************/
+
+.footer-container{
+  width: 100%;
+  background: #3f51b5;
+  margin-top: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.newsletter-ft{
+  padding-top: 30px;
+  float: left;
+  padding-left: 30px;
+  color: white;
+}
+.newsletter-section{
+  align-content: center;
+  vertical-align: middle;
+}
+.contact-info{
+  font-size: 0.8rem;
+  height: 175px;
+  float: left;
+  padding-left: 30px;
+}
+.phone-email{
+  clear: both;
+}
+a {
+  float: left;   
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.newsletter-header-ft{
+  font-size: 1.2rem;
+  margin: 0;
+}
+::ng-deep .mat-form-field-wrapper {
+  padding: 0px
+}
+.FB{
+  border: 2px rgba(255, 255, 255, 0.459) solid;
+  border-radius: 10px;
+}
+.SM-icon{
+  display: block;
+  float: left;
+  width:40px;
+}
+.sign-up-button{
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+.order-input{
+  padding-right: 20px;
+}
+.input-email{
+  background: #5770fdd5;
+  height: 2rem;
+  border: solid 2px #313e86;
+  padding-left: 10px;
+  border-radius: 8px;
+  color: white;
+}
+.input-label-email{
+  color: white;
+  border: solid 2px rgba(0,0,0, 0.0);
+}

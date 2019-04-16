@@ -1,0 +1,60 @@
+<div class="main-container">
+  <h1 class="form-header">Edit Order Request</h1>
+
+  <div class="order-radio">
+    <mat-radio-group (change)="deliveryChange()" required [(ngModel)]="deliveryType">
+      <mat-radio-button color="primary" class="order-input" value="delivery" [checked]="deliveryType === 'delivery'"> Delivery </mat-radio-button>
+      <mat-radio-button color="primary" class="order-input" value="pickup" [checked]="deliveryType === 'pickup'"> Pickup </mat-radio-button>
+      <mat-radio-button color="primary" class="order-input" value="undecided" [checked]="deliveryType === 'undecided'"> Undecided </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field class="order-input date">
+    <input matInput [matDatepicker]="picker" placeholder="Pickup / Delivery Date" [min]="minDate" required [(ngModel)]="deliveryDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+  <div style="height: 20px;"></div>
+
+  <!-- <div > -->
+  <mat-card class="cards" *ngIf="deliveryType === 'delivery'">
+    <mat-card-content>
+      <mat-form-field class="large-input">
+        <input matInput placeholder="Address" [disabled]="deliveryType !== 'delivery'" required [(ngModel)]="data.address1">
+        <mat-label>Address Line 1</mat-label>
+      </mat-form-field>
+      <mat-form-field class="large-input">
+        <input matInput  placeholder="Apartment" [disabled]="deliveryType !== 'delivery'" [(ngModel)]="data.address2">
+        <mat-label>Address Line 2</mat-label>
+      </mat-form-field>
+      <div class="city-state-zip">
+        <mat-form-field class="small-input">
+          <input matInput placeholder="City" [disabled]="deliveryType !== 'delivery'" required [(ngModel)]="data.city">
+          <mat-label>City</mat-label>
+        </mat-form-field>
+        <mat-form-field class="small-input">
+          <mat-select placeholder="State" [disabled]="deliveryType !== 'delivery'" required [(ngModel)]="data.state">
+            <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="small-input">
+          <input matInput placeholder="zip-code" [disabled]="deliveryType !== 'delivery'" required [(ngModel)]="data.zip">
+          <mat-label>Zip</mat-label>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div class="address-buffer"></div>
+
+  <mat-card class="cards">
+    <mat-card-content>
+        <h3>Pay with PayPal</h3>
+        <a href="https://www.paypal.com/us/signin" target="blank">
+          <img class="paypal" src="./assets/paypal.png">
+        </a>
+    </mat-card-content>
+  </mat-card>
+  <div class="address-buffer"></div>
+  <button mat-flat-button (click)="submit()" color="primary" class="bttn">Submit</button>
+  <span style="width: 20px;"></span>
+  <button mat-flat-button (click)="cancel()" color="primary" class="bttn">Cancel</button>

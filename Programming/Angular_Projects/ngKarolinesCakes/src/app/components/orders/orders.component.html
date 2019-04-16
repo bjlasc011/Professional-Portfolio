@@ -1,0 +1,244 @@
+<div class="main-container">
+  <h1 class="form-header">Order Request Form</h1>
+  <mat-card>
+    <mat-card-content>
+
+      <div class="order-form">
+        <mat-form-field class="large-input">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First" required>
+        </mat-form-field>
+
+        <mat-form-field class="large-input">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last" required>
+        </mat-form-field>
+
+        <mat-form-field class="small-input">
+          <mat-label>Phone</mat-label>
+          <input matInput placeholder="(502)123-4567" type="tel" required>
+        </mat-form-field>
+
+        <mat-form-field class="small-input">
+          <input matInput placeholder="your@email.com" type="email" required>
+          <mat-label>E-mail</mat-label>
+        </mat-form-field>
+
+        <mat-form-field class="small-input">
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" [min]="minDate" required>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker touchUi #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div class="newsletter">
+        <h4 class="newsletter-header">Get Baking Tips and Recipes!</h4>
+        <mat-checkbox color="primary" [(ngModel)]="newsletter">
+          sign up for newsletter
+        </mat-checkbox>
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+
+  <div class="address-buffer"></div>
+
+  <mat-card _ngcontent-c6>
+    <mat-card-content>
+      <div class="order-radio">
+        <mat-radio-group [(ngModel)]="deliveryType" (change)="deliveryChange()" required>
+          <mat-radio-button name="deliveryType" color="primary" class="order-input" value="delivery"> Delivery </mat-radio-button>
+          <mat-radio-button name="deliveryType" color="primary" class="order-input" value="pickup"> Pickup </mat-radio-button>
+          <mat-radio-button name="deliveryType" color="primary" class="order-input" value="undecided"> Undecided </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <h2 [className]="showAddress ? 'norm' : 'greyed'">Address</h2>
+      <form>
+        <mat-form-field class="large-input">
+          <input matInput placeholder="Address" [disabled]="!showAddress" required>
+          <mat-label>Address Line 1</mat-label>
+        </mat-form-field>
+        <mat-form-field class="large-input">
+          <input matInput placeholder="Apartment" [disabled]="!showAddress">
+          <mat-label>Address Line 2</mat-label>
+        </mat-form-field>
+        <mat-form-field class="small-input">
+          <input matInput placeholder="Louisville" [disabled]="!showAddress" required>
+          <mat-label>City</mat-label>
+        </mat-form-field>
+        <mat-form-field class="small-input">
+          <mat-select placeholder="KY" [disabled]="!showAddress" required>
+            <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="small-input">
+          <input matInput placeholder="zip-code" [disabled]="!showAddress" required>
+          <mat-label>Zip</mat-label>
+        </mat-form-field>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+  <div class="address-buffer"></div>
+
+
+  <mat-card _ngcontent-c6 class="last-card">
+    <mat-card-content>
+      <h2>Customize Your Dessert</h2>
+
+      <mat-form-field class="small-input">
+        <mat-select placeholder="Serving Size" required>
+          <mat-option *ngFor="let serv of servings" [value]="servings">{{serv}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="small-input">
+        <mat-select placeholder="Tier Count" required>
+          <mat-option *ngFor="let tier of tiers" [value]="tierCount">{{tier}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="small-input">
+        <input type="number" matInput placeholder="100.00">
+        <mat-label>Budget</mat-label>
+      </mat-form-field>
+
+      <mat-form-field *ngIf=!glutenFree class="small-input">
+        <mat-select placeholder="Cake flavors" required>
+          <mat-optgroup *ngFor="let group of flavorGroups" [label]="group.name">
+            <mat-option *ngFor="let flavor of group.flavors" [value]="flavor">{{flavor}}</mat-option>
+          </mat-optgroup>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="small-input">
+        <mat-select placeholder="Cake Filling">
+          <mat-option *ngFor="let filling of fillings" [value]="filling">{{filling}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="small-input">
+        <mat-select placeholder="Frosting Flavor" required>
+          <mat-option *ngFor="let frosting of frostings" [value]="frosting">{{frosting}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="xlarge-input">
+        <mat-label>Comments</mat-label>
+        <textarea matInput #comments maxlength="256" placeholder=""></textarea>
+      </mat-form-field>
+      <mat-hint class="align-right">{{comments.value.length}} / 256</mat-hint>
+    </mat-card-content>
+  </mat-card>
+  <div class="address-buffer"></div>
+
+  <mat-card _ngcontent-c6>
+    <mat-card-content>
+      <h2>Drag and Drop Photos of Designs</h2>
+
+      <div class="center clear-both">
+        <file-drop headertext="Drop files here" (onFileDrop)="dropped($event)">
+          <span><mat-icon>photo</mat-icon></span>
+        </file-drop>
+        <div class="upload-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="upload-name-style">
+              <tr *ngFor="let file of files; let i=index">
+                <td>{{ file.relativePath }}</td>
+                <td>
+                  <mat-icon (click)="deleteImg(file)">cancel</mat-icon>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+
+  <div class="address-buffer"></div>
+
+  <mat-card _ngcontent-c6class="last-card">
+    <mat-card-content>
+      <h2>Choose Some of our Treats</h2>
+      <button mat-icon-button color="primary" (click)="addTreatRow()">
+        <mat-icon color="accent">add</mat-icon>
+      </button>
+      <button mat-icon-button color="primary" (click)="popTreatRow()">
+        <mat-icon color="accent">remove</mat-icon>
+      </button>
+
+      <div *ngFor="let treat of treatRows; let i = index">
+        <mat-form-field class="large-input">
+          <mat-select placeholder="More Treats" required [(ngModel)]="treatRows[i].name">
+            <mat-optgroup *ngFor="let group of moreTreats" [label]="group.name">
+              <mat-option *ngFor="let flavor of group.flavors" [value]="treat">{{flavor}}</mat-option>
+            </mat-optgroup>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="xsmall-input">
+          <mat-select [(ngModel)]="treatRows[i].quantity" placeholder="Quantity" required>
+            <mat-option *ngFor="let q of quantity" [value]="q">{{q}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <button mat-icon-button color="primary" (click)="removeTreat(i)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name and age
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <mat-form-field>
+            <input matInput placeholder="First name">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Age">
+          </mat-form-field>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+              I'm the innards
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+  <div class="address-buffer"></div>
+
+  <mat-card _ngcontent-c6>
+    <mat-card-content>
+      <h3>Pay with PayPal</h3>
+      <a href="https://www.paypal.com/us/signin" target="blank">
+        <img class="paypal" src="./assets/paypal.png">
+      </a>
+      <div class="address-buffer"></div>
+    </mat-card-content>
+  </mat-card>
+  <div class="buffer"></div>
+  <button mat-raised-button color="primary" style="float: left;" (click)="pushAccount()">Submit</button>
+  <div class="buffer"></div>
+
+  <app-footer></app-footer>
+</div>

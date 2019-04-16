@@ -1,0 +1,58 @@
+h1, h2, h3, h4{
+  clear: both;
+}
+label {
+  padding: 10px;
+}
+.landing-photo{
+  width: 100%;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  background: rgba(160, 151, 150, 0.025);
+}
+.main-container {
+  padding: 80px 80px 0px 80px;
+  top: 50px;
+  min-height: 74vh;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);  
+  background: rgba(160, 151, 150, 0.025);
+}
+.gallery-header{
+  width: 100%;
+  align-content: center;
+  color: #272727;
+  font-size: 3rem;
+  text-shadow: 2px 2px #ffffff;
+  padding: 20px 10px 10px 20px;
+}
+.gallery-subheader{
+  float: left;
+  padding: 20px 10px 10px 20px;
+}
+.cake-img{
+  width: 350px;
+  height: 350px;
+  margin: 40px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 1px 4px 20px rgba(0,0,0,0.8);  
+}
+.col-small{
+  width: 20vw;
+}
+.col-large{
+  width: 80vw;
+}
+.cake-filter{
+  float: left;
+}
+.spacer{
+  width: 100%;
+}
+.sub-header{
+  width: 100vw;
+  display: block;
+}
+::ng-deep mat-icon {
+  cursor: pointer;
+  color: #3f51b5;
+}

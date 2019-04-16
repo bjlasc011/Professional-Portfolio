@@ -1,0 +1,134 @@
+<div class="main-container">
+  <h1> Account Details </h1>
+  <mat-card _ngcontent-c6 class="main-card">
+    <mat-card-content>
+
+      <div class="account">
+        <h2>
+          Address
+          <mat-icon class="icon" (click)="editAddress()">edit</mat-icon>
+        </h2>
+        <div *ngIf="!addressEdit">
+          <div class="details">
+            {{firstName}} {{lastName}}
+          </div>
+          <div class="details">{{address1}}<span *ngIf="address2">, {{address2}}</span></div>
+          <div class="details">{{city}}, {{state}} {{zip}}</div>
+        </div>
+
+        <mat-form-field class="order-input name-input" *ngIf="addressEdit">
+          <mat-label>First Name</mat-label>
+          <input matInput required [(ngModel)]="firstName">
+        </mat-form-field>
+        <mat-form-field class="order-input name-input" *ngIf="addressEdit">
+          <mat-label>Last Name</mat-label>
+          <input matInput required [(ngModel)]="lastName">
+        </mat-form-field>
+        <div></div>
+        <mat-form-field class="large-input" *ngIf="addressEdit">
+          <input matInput [(ngModel)]="address1">
+          <mat-label>Address Line 1</mat-label>
+        </mat-form-field>
+        <mat-form-field class="large-input" *ngIf="addressEdit">
+          <input matInput [(ngModel)]="address2">
+          <mat-label>Address Line 2</mat-label>
+        </mat-form-field>
+
+        <div class="city-state-zip" *ngIf="addressEdit">
+          <mat-form-field class="order-input">
+            <input matInput [(ngModel)]="city">
+            <mat-label>City</mat-label>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="State" [(ngModel)]="state">
+              <mat-option *ngFor="let st of states" [value]="st">{{st}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="order-input">
+            <input matInput [(ngModel)]="zip">
+            <mat-label>Zip</mat-label>
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="submit()">
+            Save
+          </button>
+        </div>
+
+        <div class="shadow">
+          <h2>
+            Phone
+            <mat-icon class="icon" (click)="editPhone()">edit</mat-icon>
+          </h2>
+          <div class="details" *ngIf="!phoneEdit">{{phone}}
+          </div>
+        </div>
+        <div *ngIf="phoneEdit">
+          <mat-form-field class="order-input">
+            <input matInput type="text" [(ngModel)]="phone">
+            <mat-label>Phone Number</mat-label>
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="submit()">
+            Save
+          </button>
+        </div>
+
+
+        <div class="shadow">
+          <h2>
+            Email
+            <mat-icon class="icon" (click)="editEmail()">edit</mat-icon>
+          </h2>
+          <div class="details" *ngIf="!emailEdit">{{email}}</div>
+        </div>
+
+        <div class="shadow" *ngIf="emailEdit">
+          <mat-form-field class="order-input">
+            <input matInput type="text" [(ngModel)]="email">
+            <mat-label>Phone Number</mat-label>
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="submit()">
+            Save
+          </button>
+        </div>
+
+      </div>
+
+
+
+      <div class="order-spacer"></div>
+      <div class="orders">
+        <div>
+          <table>
+            <tr class="tr-th">
+              <th>Order Date</th>
+              <th>Delivery Date</th>
+              <th>Order Number</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Payment</th>
+              <th class="th-icon"></th>
+            </tr>
+            <tr *ngFor="let order of orders; let i = index" class="tr-td">
+              <td>{{order.orderDate}}</td>
+              <td>{{order.deliveryDate}}</td>
+              <td>{{order.orderNum}}</td>
+              <td>{{order.price}}</td>
+              <td>{{order.description.substring(0,9)}}...</td>
+              <td>{{order.payment}}</td>
+              <td class="td-icon">
+                <mat-icon *ngIf="order.fullfilledDate === 'pending'" class="icon" (click)="openEditOrder(order)">edit</mat-icon>
+                <mat-icon *ngIf="order.fullfilledDate !== 'pending'" class="icon">check</mat-icon>
+              </td>
+
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+  <div class="order-spacer"></div>
+
+  <app-footer></app-footer>
+
+
+</div>

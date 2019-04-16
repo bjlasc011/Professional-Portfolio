@@ -1,0 +1,67 @@
+.image{
+  object-fit: scale-down;
+  max-height: 270px;
+  max-width: 360px;
+  width: 25vh;
+  justify-content: center;
+  box-shadow: 
+  0 3px 5px -1px rgba(0,0,0,.4),
+  0 6px 10px 0 rgba(0,0,0,.28), 
+  0 1px 18px 0 rgba(0,0,0,24);
+}
+.table {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contact-detail {
+  color: rgb(209, 212, 0);
+  font-size: 1.5rem;
+}
+.name {
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+  padding-top: 12px;
+}
+.desc {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(194,202,60);
+  background-color: rgba(34, 34, 34, 0.87);
+  padding: 24px;
+  font-size: .85rem;
+  line-height: 1.2rem;
+}
+.main-container {
+  box-shadow: 
+    0 3px 5px -1px rgba(0,0,0,.2),
+    0 6px 10px 0 rgba(0,0,0,.14), 
+    0 1px 18px 0 rgba(0,0,0,.12);
+  height: calc(100vh - 164px);
+}
+.content {
+  padding: 80px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.footer {
+  border-top: 8px solid rgb(209, 212, 0);
+  position: absolute;
+  width: 70vw;
+  bottom: 0;
+  min-height: 100px;
+  color: #FFF;
+  background-color: rgb(80, 80, 80);
+}
+.footer-details > * {
+  align-content: center;
+  color: #FFF;
+}
+.spacer {
+  width: 80px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

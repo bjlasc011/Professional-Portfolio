@@ -1,0 +1,83 @@
+.footer-container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex: auto;
+  width: 100%;
+  height: 20vh;
+  background: #3f51b5;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.spacer{
+  flex: auto;
+}
+.newsletter{
+  width: 500px;
+  height: 175px;
+  padding-left: 30px;
+  color: white;
+  /* float: left; */
+}
+.newsletter-section{
+  align-content: center;
+  vertical-align: middle;
+}
+::ng-deep mat-icon {
+  cursor: pointer;
+  color: #3f51b5;
+}
+.contact-info{
+  font-size: 1.2rem;
+  height: 175px;
+  /* float: left; */
+  padding-left: 30px;
+}
+.phone-email{
+  clear: both;
+}
+a {
+  float: left;   
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.newsletter-header{
+  font-size: 1.2rem;
+  margin: 0;
+}
+::ng-deep .mat-form-field-wrapper {
+  padding: 0px
+}
+.FB{
+  border: 2px rgba(255, 255, 255, 0.459) solid;
+  border-radius: 10px;
+}
+.SM-icon{
+  display: block;
+  float: left;
+  width:40px;
+}
+.sign-up-button{
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+.order-input{
+  padding-right: 20px;
+}
+.input-email{
+  background: #5770fdd5;
+  height: 2rem;
+  border: solid 2px #313e86;
+  padding-left: 10px;
+  border-radius: 8px;
+  color: white;
+}
+.input-label-email{
+  /* background: rgba(245, 131, 169, 0.904); */
+  color: white;
+  border: solid 2px rgba(0,0,0, 0.0);
+  /* padding: 10px, 0px, 0px, 15px; */
+}

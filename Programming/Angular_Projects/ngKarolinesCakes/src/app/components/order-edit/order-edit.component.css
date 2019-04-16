@@ -1,0 +1,41 @@
+.order-radio {
+  float: left;
+  padding: 20px 20px 10px 0px;
+}
+.order-input {
+  padding: 10px 10px 10px 10px;
+}
+.address-buffer{
+  height: 20px;
+}
+::ng-deep .cards{
+  width: 91%;
+}
+.date{
+  clear: both;
+}
+.paypal{
+  height: 25px;
+  border: 2px rgba(255, 255, 255, 0.459) solid;
+  border-radius: 10px;
+}
+.bttn{
+  width: 10px;
+  margin: 20px;
+}
+.large-input {
+  width: calc(50% - 20px);
+  padding: 5px 10px 5px 10px;
+}
+.small-input {
+  width: calc(33.33% - 20px);
+  padding: 5px 10px 5px 10px;
+}
+.xsmall-input{
+  width: 60px;
+  padding: 5px 10px;
+}
+.xlarge-input{
+  width: calc(100% - 20px);
+  padding: 5px 10px 5px 10px;
+}
