@@ -1,0 +1,19 @@
+git pushorigin
+git pullall
+
+************** SETUP GIT REPO USING AUGUR-NODE ****************
+download zip, do not clone => 
+
+extract => 
+
+open vs code, cd into augur-node-yourZipCopyDir =>
+
+git remote add augur-node-base https://github.com/AugurProject/augur-node.git
+
+run $git config alias.pullcustom '!git pull origin master && git pull augur-node-base master'
+
+run $git config alias.pushorigin '!git push origin master'
+
+git pullcustom
+
+npm intall
