@@ -4,9 +4,9 @@ A culmination of my Computer Information System school work and programming skil
 ## Resume and Skills
 ___
 
-[Resume](../master/Resume/Resume%20-%20SinglePage%201.8.2019)
+[Resume](../master/Resume/Resume%20-%20SinglePage%201.8.2019.docx)
 
-[Skills and Confidence Levels](../master/Resume/Skills)
+[Skills and Confidence Levels](../master/Resume/Skills.xlsx)
 
 ## Programming
 ___
@@ -16,7 +16,7 @@ ___
 
 [Angular Project - Bush Machinery](../master/Programming/Angular_Projects/bushMachinery) - This Angular7 project was made in one day. This was created to show my proficiency and speed with which I work to get a job done quickly and done well.
 
-[Angular Project - Karoline Cakes](../master/Programming/Angular_Projects/KarolineCakes) - This project was also created using Angular7 and Angular Material. Karolines Cakes was the business that was studied in my system analysis class at U of L and consisted of creating a system from requirements gathering to prototype. This is the prototype from that project, the rest of the analyis documentation can be found 
+[Angular Project - Karoline Cakes](../master/Programming/Angular_Projects/KarolinesCakes) - This project was also created using Angular7 and Angular Material. Karolines Cakes was the business that was studied in my system analysis class at U of L and consisted of creating a system from requirements gathering to prototype. This is the prototype from that project, the rest of the analyis documentation can be found 
 
 [Blockchain - Augur Connection](../master/Programming/augur-node-edited)
 
@@ -59,7 +59,7 @@ alt="Training Tracker" width="600" height="300" border="10" />
 ___
 ### Full System Analysis
 
-[Karolines Cakes](../master/Business%20Analysis\Karolines%20Cakes)
+[Karolines Cakes](../master/Business%20Analysis/Karolines%20Cakes)
 
 ### Case Studies
 
@@ -82,9 +82,9 @@ ___
 ## Research
 ___
 
-[4D Network Architecture](../master/Research%20Papers/4D%20Network%20Architecture)
+[4D Network Architecture](../master/Research%20Papers/4D%20Network%20Architecture.docx)
 
-[Artificial Neural Networks](../master/Reasearch%20Papers/Artificial%20Neural%20Networks%20and%20Overfitting)
+[Artificial Neural Networks](../master/Research%20Papers/Artificial%20Neural%20Networks%20and%20Overfitting.docx)
 
-[Ethics (Whistle Blowing)](../master/Reasearch%20Papers/Ethics%20-%20Whistle%20Blowing)
+[Ethics (Whistle Blowing)](../master/Research%20Papers/Ethics%20-%20Whistle%20Blowing.docx)
 
