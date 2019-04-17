@@ -25,7 +25,8 @@ target="_blank">What is Augur?</a>
 
 ### App Demos
 
-##### LG&E's Training Tracker Demmo Video
+##### LG&E's Training Tracker Demmo Video 
+<img src="../master/assets/youtube.svg.png" alt="" width="40" height="30" border="2" />
 I was on this project for the final 6 months of this project before doing final user stories and UATs (User Acceptance Testing) and puhsing to production. This application is used by company employees to enter completed training for compliance purposes. This application sends automatic emails and interfaces with PeopleSoft. 
 
 ###### Click the image to go to youtube
