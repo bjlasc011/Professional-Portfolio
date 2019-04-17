@@ -25,8 +25,18 @@ ___
 
 ### Case Studies
 
-[Case Studies](../master/Business Analysis/Business Case Studies)
+[Agrico](../master/Business%20Analysis/Business%20Case%20Studies/Agrico_AMR_Analysis)
 
-### Case Studies
+[APPEX](../master/Business%20Analysis/Business%20Case%20Studies/APPEX_Analysis)
 
-[Karoline Cakes System Designs](../master/Business Analysis/Karolines Cakes)
+[Burlington Northern](../master/Business%20Analysis/Business%20Case%20Studies/Burlington_Norther_Analysis)
+
+[Connor Formed Metal](../master/Business%20Analysis/Business%20Case%20Studies/Connor_Formed_Metal_Analysis)
+
+[IRS](../master/Business%20Analysis/Business%20Case%20Studies/IRS_Case_Analysis)
+
+[Symantec](../master/Business%20Analysis/Business%20Case%20Studies/Symantec_Analysis)
+
+[Waco](../master/Business%20Analysis/Business%20Case%20Studies/Waco_Case_Analysis)
+
+[Webvan](../master/Business%20Analysis/Business%20Case%20Studies/Webvan_Analysis)
