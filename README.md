@@ -63,26 +63,26 @@ ___
 
 ### Case Studies
 
-[Agrico](../master/Business%20Analysis/Business%20Case%20Studies/Agrico_AMR_Analysis)
+[Agrico](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[APPEX](../master/Business%20Analysis/Business%20Case%20Studies/APPEX_Analysis)
+[APPEX](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[Burlington Northern](../master/Business%20Analysis/Business%20Case%20Studies/Burlington_Norther_Analysis)
+[Burlington Northern](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[Connor Formed Metal](../master/Business%20Analysis/Business%20Case%20Studies/Connor_Formed_Metal_Analysis)
+[Connor Formed Metal](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[IRS](../master/Business%20Analysis/Business%20Case%20Studies/IRS_Case_Analysis)
+[IRS](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[Symantec](../master/Business%20Analysis/Business%20Case%20Studies/Symantec_Analysis)
+[Symantec](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[Waco](../master/Business%20Analysis/Business%20Case%20Studies/Waco_Case_Analysis)
+[Waco](../master/Business%20Analysis/Business%20Case%20Studies/)
 
-[Webvan](../master/Business%20Analysis/Business%20Case%20Studies/Webvan_Analysis)
+[Webvan](../master/Business%20Analysis/Business%20Case%20Studies/)
 
 ## Research
 ___
 
-[4D Network Architecture](../master/Reasearch%20Papers/4D%20Network%20Architecture)
+[4D Network Architecture](../master/Research%20Papers/4D%20Network%20Architecture)
 
 [Artificial Neural Networks](../master/Reasearch%20Papers/Artificial%20Neural%20Networks%20and%20Overfitting)
 
