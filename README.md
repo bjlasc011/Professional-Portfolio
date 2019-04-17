@@ -51,7 +51,9 @@ alt="Training Tracker" width="600" height="300" border="10" /></a>
 [Statistics Library](../master/Programming/C_Sharp_Statistics_Library) - this is a C# library project that can be referenced in other projects (DLL). This library covers advanced statistical functions such as z-score calculations, rare event calculations, and confidence intervals as well as standard deviations for normally distributed samples.
 
 [Video Processing - Canny Edge Detection](../master/Programming/CannyEdgeDetector) - this C# web form application is my experimentation with image processing algorithms and edge detection. This program uses your web cam, processes the input smooths the images using a Gaussian filter, translates to a grayscale, resizes for performance, then finds contrours given various thresholds, then these thresholds are drawn to each frame. All of this is done in near realtime. Next step will be to use SIFT/SURF feature extraction.
-<img src="../master/Programming/cannyProgram.jpg" alt="" height="300px" width="600px" />
+
+<img src="../master/Programming/cannyProgram.jpg" 
+alt="Training Tracker" width="600" height="300" border="10" />
 
 ## Business Analysis
 ___
