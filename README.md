@@ -22,7 +22,15 @@ ___
 
 [What is Augur?](https://www.augur.net/)
 
+### App Demos
+https://www.youtube.com/watch?v=uu6q5zBl8WE
+<a 
+href="https://www.youtube.com/watch?v=uu6q5zBl8WE" 
+target="_blank"><img src="../master/Programming/trainingtracker.jpg" 
+alt="Training Tracker" width="240" height="180" border="10" /></a>
+
 ### C# Programs
+##### I started programming with C# in Nov 2017, and since that time I have implemented Rest APIs, Canny Edge Detection, and Statistical Libraries (For Artificial Neural Nets). I still have more to learn, but am growing my knowledgebase quickly.
 
 [Basic C# Programs](../master/Programming/C_Sharp)
 
