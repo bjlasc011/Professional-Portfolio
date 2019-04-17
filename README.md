@@ -1,5 +1,9 @@
 # Professional-Portfolio
-A culmination of my Computer Information System school work and programming skills.
+Welcome to my Portfolio. My work is categorized by type and each link takes you to the GitHub directory. From there you can browse certain file types or choos to down load pieces or all of this repo.
+
+To Download all use the green "clone or download" button on the [Professional-Portfolio](https://github.com/bjlasc011/Professional-Portfolio) home page, and then select download zip. After extracting you will have all solutions (C#), word docs, and PDFs available. 
+
+NOTE: The angular projects will not be able to be spun up on a localhost unless the machine has an IDE with Angular and NPM installed. Otherwise, feel free to browse the code using any common IDE (VS || VS Cose || Atom)
 
 ## Resume and Skills
 ___
@@ -26,10 +30,13 @@ target="_blank">What is Augur?</a>
 ### App Demos
 
 ##### LG&E's Training Tracker Demmo Video 
-<img src="../master/assets/youtube.svg.png" alt="" width="40" height="30" border="2" />
+
 I was on this project for the final 6 months of this project before doing final user stories and UATs (User Acceptance Testing) and puhsing to production. This application is used by company employees to enter completed training for compliance purposes. This application sends automatic emails and interfaces with PeopleSoft. 
 
-###### Click the image to go to youtube
+###### Click the image to go to youtube 
+
+<a href="https://www.youtube.com/watch?v=UU6Q5ZbL8WE" target="_blank"><img src="../master/assets/youtube.svg.png" alt="" width="40" height="30" border="2" /></a>
+
 <a href="https://www.youtube.com/watch?v=UU6Q5ZbL8WE" 
 target="_blank"><img src="../master/Programming/trainingtracker.jpg" 
 alt="Training Tracker" width="600" height="300" border="10" /></a>
@@ -40,6 +47,9 @@ HR Interview Builder is LG&E's first fully dedicated Agile project in an effort 
 This app will be both mobile and browser. It will be used to complete interview questionnaires, candidate evaluations, and act as a staffing services hub to manage all requisitions. HR Interview Builder will also be the system of record to prepare the company in case of legal action for Hiring Practice claims.
 
 ###### Click the image to go to youtube
+
+<a href="https://www.youtube.com/watch?v=q3goyvmWNBg" target="_blank"><img src="../master/assets/youtube.svg.png" alt="" width="40" height="30" border="2" /></a>  
+
 <a href="https://www.youtube.com/watch?v=q3goyvmWNBg" 
 target="_blank"><img src="../master/Programming/hrib.jpg" 
 alt="Training Tracker" width="600" height="300" border="10" /></a>
