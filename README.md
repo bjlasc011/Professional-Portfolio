@@ -1,8 +1,32 @@
 # Professional-Portfolio
 A culmination of my Computer Information System school work and programming skills.
 
-[Angular (JavaScript, TypeScript, HTML, CSS)](../master/Programming/Angular_Projects)
-[C#](../master/Programming/C_Sharp)
-[AI and Pattern Recognition](../master/AI and Pattern Recognition)
-[Database Design](../master/Database Design)
-[4D Network Architecture](../master/Research Papers/4D Network Architecture.docx)
+## Programming
+___
+
+### Angular, JavaScript, TypeScript, HTML, CSS
+
+[Angular Project - Bush Machinery](../master/Programming/Angular_Projects/bushMachinery)
+
+[Angular Project - Karoline Cakes](../master/Programming/Angular_Projects/KarolineCakes)
+
+
+### C# Programs
+
+[Basic C# Programs](../master/Programming/C_Sharp)
+
+[Statistics Library](../master/Programming/C_Sharp_Statistics_Library)
+
+[Video Processing - Canny Edge Detection](../master/Programming/CannyEdgeDetector)
+
+
+## Business Analysis
+___
+
+### Case Studies
+
+[Case Studies](../master/Business Analysis/Business Case Studies)
+
+### Case Studies
+
+[Karoline Cakes System Designs](../master/Business Analysis/Karolines Cakes)
