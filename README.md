@@ -1,5 +1,9 @@
 # Professional-Portfolio
-A culmination of my Computer Information System school work and programming skills.
+Welcome to my Portfolio. My work is categorized by type and each link takes you to the GitHub directory. From there you can browse certain file types or choos to down load pieces or all of this repo.
+
+To Download all use the green "clone or download" button on the [Professional-Portfolio](https://github.com/bjlasc011/Professional-Portfolio) home page, and then select download zip. After extracting you will have all solutions (C#), word docs, and PDFs available. 
+
+NOTE: The angular projects will not be able to be spun up on a localhost unless the machine has an IDE with Angular and NPM installed. Otherwise, feel free to browse the code using any common IDE (VS || VS Cose || Atom)
 
 ## Resume and Skills
 ___
